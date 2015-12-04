@@ -38,6 +38,7 @@
         <configuration>
           <version>1.4</version>
           <unpackTypes>war</unpackTypes>
+          <skinnyWars>true</skinnyWars>
           <modules>
             <webModule>
               <groupId>${project.groupId}</groupId>

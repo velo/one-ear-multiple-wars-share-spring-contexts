@@ -23,6 +23,7 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>java</artifactId>
       <version>${project.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
