@@ -40,6 +40,10 @@
           <unpackTypes>war</unpackTypes>
           <skinnyWars>true</skinnyWars>
           <modules>
+            <ejbModule>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>java</artifactId>
+            </ejbModule>
             <webModule>
               <groupId>${project.groupId}</groupId>
               <artifactId>web1</artifactId>
@@ -50,10 +54,6 @@
               <artifactId>web2</artifactId>
               <contextRoot>/web2</contextRoot>
             </webModule>
-            <ejbModule>
-              <groupId>${project.groupId}</groupId>
-              <artifactId>java</artifactId>
-            </ejbModule>
           </modules>
         </configuration>
       </plugin>
