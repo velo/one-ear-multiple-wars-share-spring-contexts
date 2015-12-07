@@ -12,20 +12,21 @@
 
 	<context-param>
 	    <param-name>locatorFactorySelector</param-name>
-	    <param-value>classpath:common-beans.xml</param-value> <!--  beanrefContext.xml is the default, if you use that this block is unnecessary-->
+	    <param-value>classpath:beanRefContext.xml</param-value>
 	</context-param> 
-	   
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:applicationContext.xml</param-value>
+    </context-param>
+
     <listener>
-        <listener-class>
-            org.springframework.web.context.ContextLoaderListener
-        </listener-class>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
     <servlet>
         <servlet-name>sample1</servlet-name>
-        <servlet-class>
-            org.springframework.web.servlet.DispatcherServlet
-        </servlet-class>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>/WEB-INF/spring/sample-servlet1.xml</param-value>
