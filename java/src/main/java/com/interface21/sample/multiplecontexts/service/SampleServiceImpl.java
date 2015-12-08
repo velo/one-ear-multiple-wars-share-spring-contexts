@@ -3,7 +3,7 @@ package com.interface21.sample.multiplecontexts.service;
 public class SampleServiceImpl implements SampleService {
 
 	private String simpleProp;
-	private static int count;
+	private int count;
 	
 	public SampleServiceImpl() {
 		System.out.println("\n\n+++++++++++++++ inside SampleServiceImpl constructor ++++++++++++++++++++++\n\n");

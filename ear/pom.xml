@@ -37,7 +37,6 @@
         <version>2.10.1</version>
         <configuration>
           <version>1.4</version>
-          <unpackTypes>war</unpackTypes>
           <skinnyWars>true</skinnyWars>
           <modules>
             <ejbModule>
